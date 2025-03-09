@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Nora Zajzon</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
     <header class="site-header">
@@ -32,46 +42,59 @@
     </div>
 
     <main>
-        <section>
-            <article>
-                <h2>Influencer Marketing Web Application</h2>
-                <p>As a Software Engineering Intern at StoryIt, I worked on developing an influencer marketing platform designed to streamline collaboration between businesses and content creators. This web application helps companies create, manage, and track marketing content deals efficiently, offering an end-to-end solution for influencer partnerships.
+        <section class="projects-grid">
+            <project-card
+                title="Software Engineer Intern - Influencer Marketing Web Application"
+                description="As a Software Engineering Intern at StoryIt, I worked on developing an influencer marketing platform designed to streamline collaboration between businesses and content creators. This web application helps companies create, manage, and track marketing content deals efficiently."
+                image="story.webp"
+                image-alt="Story It Logo"
+                link="https://www.storyit.app"
+                date="2023"
+                show-link
+                tags="React,Flutter,Firestore">
+            </project-card>
 
-                    My contributions involved both front-end and back-end development, where I worked with React for UI development and Flutter for manual verification workflows. I also played a crucial role in data management using Firestore, implementing efficient queries and API interactions to optimize data retrieval.</p>
-            </article>
-            <article>
-                <h2>I Miss My DJ - Interactive Music Experience</h2>
-                <p>As part of Women in Computing at UCSD, I contributed to the development of "I Miss My DJ," an interactive web application that recreates the experience of listening to curated music playlists based on user nostalgia and personal preferences. This project aimed to bring a personalized, immersive music experience to users by simulating DJ-style music transitions and interactive audio controls.</p>
-                <ul>
-                    <li>Implemented real-time audio processing features using the Web Audio API</li>
-                    <li>Developed user preference algorithms to create personalized playlist recommendations</li>
-                    <li>Collaborated with a team of women engineers to design and implement the user interface</li>
-                    <li>Integrated with music streaming services to access and manipulate audio content</li>
-                </ul>
-            </article>
-            <article>
-                <h2>Other Projects</h2>
-                <ol>
-                    <li>
-                        <h3>Brain-Computer Interface (BCI) Dino Game</h3>
-                        <p>One of my most exciting projects involved integrating brain-computer interface (BCI) technology with the classic Google Chrome Dinosaur Game. Using the Muse Headband API, which records real-time EEG (electroencephalography) signals, I developed a system where a player could control the game by simply blinking. This project required extensive signal processing, as I had to filter and interpret EEG data to detect blinks and translate them into game inputs.
+            <project-card
+                title="Full Stack Developer - Hack For LA"
+                description="I contribute to both front-end and back-end development to enhance this React and Node.js web application designed to
+                streamline volunteer management. My work involves automating user onboarding for Hack For LA, building API
+                endpoints, and refining the UI/UX to support remote team operations and improve the volunteer experience. I
+                collaborate closely with the development team to implement key features, such as project rosters and event creation
+                tools, aimed at increasing organizational efficiency and project impact."
+                image="hack.webp"
+                image-alt="Hack For LA Logo"
+                link="https://www.hackforla.org/projects/vrms.html"
+                date="2023"
+                show-link
+                tags="React,Node.js, MUI">
+            </project-card>
 
-                            I implemented a JavaScript-based interface to interact with the Muse API, allowing real-time response to brain activity. This project placed second in a district STEM competition, where I presented my findings to a panel of judges. Additionally, I wrote an article on the project detailing the methodology and results, <a href="https://nora-zajzon.medium.com/playing-the-dino-game-using-brainwaves-927145035267" target="_blank" style="color: #60829c;">available here</a>.</p>
-                    </li>
-                    <li>
-                        <h3>Routine Tracker Mobile Application - CSE 110 Team Project</h3>
-                        <p>Currently developing a native Android application focused on routine and task management as part of 
-                        <dfn>Software Engineering</dfn> coursework. Working with a six-person development team, we're employing 
-                        <dfn>AGILE</dfn> methodologies and <dfn>SCRUM</dfn> practices to create an application that helps users 
-                        build and maintain productive daily routines through intuitive task tracking and habit formation features.</p>
-                    </li>
-                </ol>
-            </article>
+            <project-card
+                title="I Miss My DJ - Interactive Music Experience"
+                description="An interactive web application that recreates the experience of listening to curated music playlists based on user nostalgia and personal preferences, developed as part of Women in Computing at UCSD."
+                image="dj.webp"
+                image-alt="Image of DJ"
+                link="#"
+                date="2023"
+                tags="Web Audio API,JavaScript,UI Design">
+            </project-card>
+
+            <project-card
+                title="Brain-Computer Interface (BCI) Dino Game"
+                description="Integrated brain-computer interface technology with the classic Google Chrome Dinosaur Game using the Muse Headband API for EEG signal processing. This project placed second in a district STEM competition."
+                image="dino.webp"
+                image-alt="Screenshot of the BCI Dino Game"
+                link="https://nora-zajzon.medium.com/playing-the-dino-game-using-brainwaves-927145035267"
+                date="2022"
+                show-link
+                tags="BCI,JavaScript,Signal Processing">
+            </project-card>
         </section>
     </main>
     <footer>
         <p>Made with &hearts; by Nora Zajzon</p>
     </footer>
     <script src="./theme.js"></script>
+    <script src="./project-card.js"></script>
 </body>
 </html> 
