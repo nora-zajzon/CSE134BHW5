@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Nora Zajzon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container">
+            <button class="hamburger-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h1 class="site-title">Nora Zajzon - UC San Diego Regents Scholar</h1>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <!-- Icon will be inserted by JavaScript -->
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="no-js-message">
+        Note: Theme switching requires JavaScript. Your current theme preference cannot be saved without JavaScript enabled.
+    </div>
+
+    <main>
+        <div class="contact-container">
+            <!-- Left side - Form -->
+            <section class="form-section">
+                <h1>Contact Me</h1>
+                <form action="https://httpbin.org/post" method="post">
+                    <fieldset>
+                        <legend>Contact Form</legend>
+                
+                        <label for="name">Name:<span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required minlength="2" maxlength="50" 
+                               pattern="^[A-Za-z\s]+$" placeholder="Enter your full name">
+                        <output class="error-message">Please enter a valid name (only letters and spaces).</output>
+                
+                        <label for="email">Email:<span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="example@email.com">
+                        <output class="error-message">Please enter a valid email address.</output>
+                
+                        <label for="comments">Comments:<span class="required">*</span></label>
+                        <textarea id="comments" name="comments" required minlength="10" maxlength="500" 
+                                  pattern="^[A-Za-z0-9 .,!?()&@#$%^*+=\\-_/]+$" 
+                                  placeholder="Enter your message"></textarea>
+                        <output class="error-message">Please enter a valid comment (10-500 characters).</output>
+                        <div id="comments-countdown"></div>
+                
+                        <input type="hidden" name="possible_bot" value="true">
+                        
+                        <button type="submit">Send Message</button>
+                    </fieldset>
+                </form>
+                
+            </section>
+
+            <!-- Right side - Contact Info -->
+            <section class="contact-section">
+                <h2>Alternative Contact Methods</h2>
+                <div class="contact-details">
+                    <p>
+                        <strong>Email:</strong> 
+                        <a href="mailto:nora.zajzon@gmail.com">nora.zajzon@gmail.com</a> or 
+                        <a href="mailto:nzajzon@ucsd.edu">nzajzon@ucsd.edu</a>
+                    </p>
+                    <p>
+                        <strong>Phone:</strong> 
+                        <a href="tel:+17143631866">(714) 363-1866</a>
+                    </p>
+                </div>
+                <div class="contact-icons">
+                    <a href="https://linkedin.com/in/nora-zajzon-9bb6021b6" target="_blank" rel="noopener noreferrer">
+                        <picture class="social-icon">
+                            <source type="image/webp" srcset="LinkedIn_icon.svg.webp">
+                            <img src="LinkedIn_icon.svg.webp" 
+                                alt="LinkedIn Profile" 
+                                loading="lazy"
+                                width="30"
+                                height="30">
+                        </picture>
+                    </a>
+                    <a href="https://github.com/nora-zajzon" target="_blank" rel="noopener noreferrer">
+                        <picture class="social-icon">
+                            <source type="image/webp" srcset="GitHub-Mark-ea2971cee799.webp">
+                            <img src="GitHub-Mark-ea2971cee799.webp" 
+                                alt="GitHub Profile" 
+                                loading="lazy"
+                                width="30"
+                                height="30">
+                        </picture>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Made with &hearts; by Nora Zajzon</p>
+    </footer>
+    <script src="./theme.js"></script>
+</body>
+</html> 

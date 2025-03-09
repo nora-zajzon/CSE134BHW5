@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Nora Zajzon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container">
+            <button class="hamburger-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h1 class="site-title">Nora Zajzon - UC San Diego Regents Scholar</h1>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <!-- Icon will be inserted by JavaScript -->
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="no-js-message">
+        Note: Theme switching requires JavaScript. Your current theme preference cannot be saved without JavaScript enabled.
+    </div>
+
+    <main class="about-container">
+        <h1>About Me</h1>
+        
+        <div class="about-grid">
+            <!-- Left Container -->
+            <section class="about-section">
+                <h2>Quick Facts</h2>
+                <datalist id="programming-languages">
+                    <option value="Python">
+                    <option value="JavaScript">
+                    <option value="Java">
+                    <option value="C++">
+                    <option value="HTML/CSS">
+                </datalist>
+                
+                <dialog id="welcome-dialog">
+                    <p>Welcome to my about page! I'm excited to share my story with you.</p>
+                    <form method="dialog">
+                        <button>Close</button>
+                    </form>
+                </dialog>
+
+                <p>I'm a second-year Computer Science student at UCSD and currently working as an intern at StoryIt. 
+                <ins datetime="2024-03-15">Recently, I've been focusing on machine learning and web development projects!</ins></p>
+                
+                <hr>
+
+                <h2>My Coding Journey</h2>
+                <button id="show-classes" aria-expanded="false">View My Coursework</button>
+                <div id="classes-content"></div>
+
+                <div class="contact-icons">
+                    <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+                        <picture class="social-icon">
+                            <source type="image/webp" srcset="LinkedIn_icon.svg.webp">
+                            <img src="LinkedIn_icon.svg.webp" 
+                                alt="LinkedIn Profile" 
+                                loading="lazy"
+                                width="30"
+                                height="30">
+                        </picture>
+                    </a>
+                    <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
+                        <picture class="social-icon">
+                            <source type="image/webp" srcset="GitHub-Mark-ea2971cee799.webp">
+                            <img src="GitHub-Mark-ea2971cee799.webp" 
+                                alt="GitHub Profile" 
+                                loading="lazy"
+                                width="30"
+                                height="30">
+                        </picture>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Middle Container -->
+            <section class="about-section">
+                <h2>My Furry Friends</h2>
+                <div class="pet-container">
+                    <picture class="pet-image">
+                        <source type="image/webp" srcset="EB17A0DA-5221-41BC-BC86-F744FEF566E1_1_105_c.webp">
+                        <source type="image/jpeg" srcset="EB17A0DA-5221-41BC-BC86-F744FEF566E1_1_105_c.jpg">
+                        <img src="EB17A0DA-5221-41BC-BC86-F744FEF566E1_1_105_c.webp" 
+                            alt="Cherry, my adorable dog" 
+                            loading="lazy"
+                            width="120"
+                            height="120">
+                    </picture>
+                    <p>Meet my adorable dogs, Chippy and Cherry! We adopted them in 2015, and they are 9 years old. They are sisters who are part chihuahua, basset hound, and shepard. Chippy and Cherry love long walks ending with long naps!</p>
+                </div>
+            </section>
+
+            <!-- Right Container -->
+            <section class="about-section">
+                <h2>Musical Journey</h2>
+                <p>I've been playing piano for over 10 years. Here's a recent piece I learned:</p>
+                <audio controls>
+                    <source src="music.mp3" type="audio/mpeg">
+                    Your browser doesn't support audio playback.
+                </audio>
+
+                <h2>Artistic Pursuits</h2>
+                <div class="art-container">
+                    <picture class="art-image">
+                        <source type="image/webp" srcset="IMG_5385.webp">
+                        <img src="IMG_5385.webp" 
+                            alt="My original oil painting" 
+                            loading="lazy"
+                            width="120">
+                    </picture>
+                    <p>I've been oil painting since I was 7. Here is an original painting I did!</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Made with &hearts; by Nora Zajzon</p>
+    </footer>
+    <script src="./theme.js"></script>
+</body>
+</html> 

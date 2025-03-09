@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website">
+    <meta name="author" content="Nora Zajzon">
+    <title>Nora Zajzon - Personal Website</title>
+    <meta property="og:title" content="My Web Portfolio">
+    <meta property="og:description" content="A showcase of my web development work">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <header class="site-header">
+        <nav class="nav-container">
+            <button class="hamburger-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h1 class="site-title">Nora Zajzon - UC San Diego Regents Scholar</h1>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <!-- Icon will be inserted by JavaScript -->
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="no-js-message">
+        Note: Theme switching requires JavaScript. Your current theme preference cannot be saved without JavaScript enabled.
+    </div>
+
+    <main>
+        <section>
+            <h2>Welcome to My Website</h2>
+            <div class="bio-container">
+                <div class="bio-left">
+                    <picture class="bio-image">
+                        <!-- WebP format - best compression -->
+                        <source type="image/webp" srcset="NoraImg.webp">
+                        <!-- fallback -->
+                        <source type="image/jpeg" srcset="NoraImg.jpg">
+                        <source type="image/png" srcset="NoraImg-large.png">
+                        
+                        <!-- Default image with proper attributes -->
+                        <img src="NoraImg.webp" 
+                            alt="Nora Zajzon - Computer Science student at UCSD"
+                            loading="lazy"
+                            width="300"
+                            height="400"
+                            style="object-fit: cover; object-position: center">
+                    </picture>
+                    <figcaption>
+                        <span class="email">nzajzon</span> [at] <span class="domain">ucsd</span> [dot] <span class="ext">edu</span>
+                    </figcaption>
+
+        
+                    <address class="contact-info">
+                        Contact Information:<br>
+                        <a href="https://linkedin.com/in/nora-zajzon-9bb6021b6" target="_blank">
+                            <img src="LinkedIn_icon.svg.png" alt="LinkedIn" width="30" height="30">
+                        </a>
+                        <a href="https://github.com/nora-zajzon" target="_blank">
+                            <img src="GitHub-Mark-ea2971cee799.png" alt="Github" width="30" height="30">
+                        </a>
+                        <a href="mailto:nzajzon@ucsd.edu">
+                            <svg width="30" height="30" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8l-8,5L4,8V6l8,5l8-5V8z"/>
+                            </svg>
+                        </a>
+                    </address>
+                </div>
+                <div class="bio-text">
+                    <p>Hi, I'm Nora Zajzon, a <strong>Computer Science</strong> student at the University of California, San Diego, with a minor in <strong>Cognitive Science</strong>. 
+                    I have a strong passion for software engineering, particularly in front-end and back-end development, as well as research in brain-computer interfaces.</p>
+        
+                    <p>I have experience working with <b>React, Node.js, Python, C++, C, JavaScript, and Java</b>, and I enjoy building intuitive and efficient web applications. 
+                    My work spans software engineering internships, open-source contributions, and academic research, including projects on EEG-based handwriting detection and machine learning applications in neuroscience.</p>
+        
+                    <p>I am also an active member of <em>Women in Computing</em> at UCSD, where I contribute to technical development projects and support diversity in tech. 
+                    Currently, I'm working on innovative web applications and researching EEG-based handwriting detection.</p>
+        
+                    <p>Feel free to check out my <i>projects, research, or to reach out</i>.</p>
+                </div>
+            </div>
+        </section>        
+
+    </main>
+
+    <page-section-divider></page-section-divider>
+    <footer>
+        <p>Made with &hearts; by Nora Zajzon</p>
+    </footer>
+    <script src="./theme.js"></script>
+</body>
+</html>
