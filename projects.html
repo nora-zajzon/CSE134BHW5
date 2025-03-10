@@ -14,6 +14,39 @@
             max-width: 1400px;
             margin: 0 auto;
         }
+
+        .load-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .load-button {
+            padding: 0.75rem 1.5rem;
+            background: var(--primary-color);
+            color: var(--background-color);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: var(--font-primary);
+            font-size: 1rem;
+            transition: var(--transition-speed);
+        }
+
+        .load-button:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .error-message {
+            color: #ff4444;
+            text-align: center;
+            padding: 1rem;
+            margin: 1rem 0;
+            background: rgba(255, 68, 68, 0.1);
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
@@ -42,6 +75,10 @@
     </div>
 
     <main>
+        <div class="load-buttons">
+            <button id="loadLocal" class="load-button">Load Local</button>
+            <button id="loadRemote" class="load-button">Load Remote</button>
+        </div>
         <section class="projects-grid">
             <project-card
                 title="Software Engineer Intern - Influencer Marketing Web Application"
@@ -96,5 +133,6 @@
     </footer>
     <script src="./theme.js"></script>
     <script src="./project-card.js"></script>
+    <script src="./project-loader.js"></script>
 </body>
 </html> 
