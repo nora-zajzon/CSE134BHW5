@@ -47,6 +47,13 @@
             background: rgba(255, 68, 68, 0.1);
             border-radius: 8px;
         }
+
+        .empty-state {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-color);
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -80,52 +87,7 @@
             <button id="loadRemote" class="load-button">Load Remote</button>
         </div>
         <section class="projects-grid">
-            <project-card
-                title="Software Engineer Intern - Influencer Marketing Web Application"
-                description="As a Software Engineering Intern at StoryIt, I worked on developing an influencer marketing platform designed to streamline collaboration between businesses and content creators. This web application helps companies create, manage, and track marketing content deals efficiently."
-                image="story.webp"
-                image-alt="Story It Logo"
-                link="https://www.storyit.app"
-                date="2023"
-                show-link
-                tags="React,Flutter,Firestore">
-            </project-card>
-
-            <project-card
-                title="Full Stack Developer - Hack For LA"
-                description="I contribute to both front-end and back-end development to enhance this React and Node.js web application designed to
-                streamline volunteer management. My work involves automating user onboarding for Hack For LA, building API
-                endpoints, and refining the UI/UX to support remote team operations and improve the volunteer experience. I
-                collaborate closely with the development team to implement key features, such as project rosters and event creation
-                tools, aimed at increasing organizational efficiency and project impact."
-                image="hack.webp"
-                image-alt="Hack For LA Logo"
-                link="https://www.hackforla.org/projects/vrms.html"
-                date="2023"
-                show-link
-                tags="React,Node.js, MUI">
-            </project-card>
-
-            <project-card
-                title="I Miss My DJ - Interactive Music Experience"
-                description="An interactive web application that recreates the experience of listening to curated music playlists based on user nostalgia and personal preferences, developed as part of Women in Computing at UCSD."
-                image="dj.webp"
-                image-alt="Image of DJ"
-                link="#"
-                date="2023"
-                tags="Web Audio API,JavaScript,UI Design">
-            </project-card>
-
-            <project-card
-                title="Brain-Computer Interface (BCI) Dino Game"
-                description="Integrated brain-computer interface technology with the classic Google Chrome Dinosaur Game using the Muse Headband API for EEG signal processing. This project placed second in a district STEM competition."
-                image="dino.webp"
-                image-alt="Screenshot of the BCI Dino Game"
-                link="https://nora-zajzon.medium.com/playing-the-dino-game-using-brainwaves-927145035267"
-                date="2022"
-                show-link
-                tags="BCI,JavaScript,Signal Processing">
-            </project-card>
+            <div class="empty-state"></div>
         </section>
     </main>
     <footer>

@@ -15,7 +15,6 @@ class ProjectLoader {
 
     initializeLocalStorage() {
         if (!localStorage.getItem(this.STORAGE_KEY)) {
-            // Fetch the initial data from our local JSON file
             fetch('projects.json')
                 .then(response => response.json())
                 .then(data => {
@@ -95,7 +94,6 @@ class ProjectLoader {
     }
 }
 
-// Initialize the loader when the DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     new ProjectLoader();
 }); 
