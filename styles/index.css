@@ -1,0 +1,76 @@
+/* Index Page Styles - index.css */
+
+.bio-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  
+    & .bio-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      margin-left: 0;
+  
+      & .bio-image {
+        width: 100%;
+        max-width: 300px;
+        aspect-ratio: 3/4;
+        overflow: hidden;
+        border-radius: 10px;
+  
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+  
+      & .contact-info {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+  
+        & a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+  
+          & img,
+          & svg {
+            transition: transform 0.3s ease;
+  
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  
+    & .bio-text {
+      flex: 1;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text-color);
+    }
+  }
+
+address a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+address a:hover {
+    color: var(--primary-color);
+}

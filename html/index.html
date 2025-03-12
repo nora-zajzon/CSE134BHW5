@@ -9,7 +9,8 @@
     <meta property="og:title" content="My Web Portfolio">
     <meta property="og:description" content="A showcase of my web development work">
     <meta property="og:image" content="path/to/image.jpg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/index.css"> <!-- Change for each page -->    
 </head>
 <body>
     <noscript>Your browser does not support JavaScript!</noscript>
@@ -25,11 +26,11 @@
                 <!-- Icon will be inserted by JavaScript -->
             </button>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/about.html">About</a></li>
+                <li><a href="../html/research.html">Research</a></li>
+                <li><a href="../html/projects.html">Projects</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -44,13 +45,13 @@
                 <div class="bio-left">
                     <picture class="bio-image">
                         <!-- WebP format - best compression -->
-                        <source type="image/webp" srcset="NoraImg.webp">
+                        <source type="image/webp" srcset="../images/NoraImg.webp">
                         <!-- fallback -->
-                        <source type="image/jpeg" srcset="NoraImg.jpg">
-                        <source type="image/png" srcset="NoraImg-large.png">
+                        <source type="image/jpeg" srcset="../images/NoraImg.jpg">
+                        <source type="image/png" srcset="../images/NoraImg-large.png">
                         
                         <!-- Default image with proper attributes -->
-                        <img src="NoraImg.webp" 
+                        <img src="../images/NoraImg.webp" 
                             alt="Nora Zajzon - Computer Science student at UCSD"
                             loading="lazy"
                             width="300"
@@ -65,10 +66,10 @@
                     <address class="contact-info">
                         Contact Information:<br>
                         <a href="https://linkedin.com/in/nora-zajzon-9bb6021b6" target="_blank">
-                            <img src="LinkedIn_icon.svg.png" alt="LinkedIn" width="30" height="30">
+                            <img src="../images/LinkedIn_icon.svg.png" alt="LinkedIn" width="30" height="30">
                         </a>
                         <a href="https://github.com/nora-zajzon" target="_blank">
-                            <img src="GitHub-Mark-ea2971cee799.png" alt="Github" width="30" height="30">
+                            <img src="../images/GitHub-Mark-ea2971cee799.png" alt="Github" width="30" height="30">
                         </a>
                         <a href="mailto:nzajzon@ucsd.edu">
                             <svg width="30" height="30" viewBox="0 0 24 24">
@@ -98,6 +99,6 @@
     <footer>
         <p>Made with &hearts; by Nora Zajzon</p>
     </footer>
-    <script src="./theme.js"></script>
+    <script src="../javascript/theme.js"></script>
 </body>
 </html>

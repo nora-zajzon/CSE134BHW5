@@ -1,0 +1,48 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.load-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.load-button {
+    padding: 0.75rem 1.5rem;
+    background: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    transition: var(--transition-speed);
+}
+
+.load-button:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.error-message {
+    color: #ff4444;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: rgba(255, 68, 68, 0.1);
+    border-radius: 8px;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-color);
+    font-style: italic;
+}
