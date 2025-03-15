@@ -37,24 +37,20 @@
             <!-- Left side - Form -->
             <section class="form-section">
                 <h1>Contact Me</h1>
-                <form action="https://httpbin.org/post" method="post">
+                <form id="contactForm" action="https://httpbin.org/post" method="post">
                     <fieldset>
                         <legend>Contact Form</legend>
                 
                         <label for="name">Name:<span class="required">*</span></label>
                         <input type="text" id="name" name="name" required minlength="2" maxlength="50" 
-                               pattern="^[A-Za-z\s]+$" placeholder="Enter your full name">
-                        <output class="error-message">Please enter a valid name (only letters and spaces).</output>
+                               placeholder="Enter your full name">
                 
                         <label for="email">Email:<span class="required">*</span></label>
                         <input type="email" id="email" name="email" required placeholder="example@email.com">
-                        <output class="error-message">Please enter a valid email address.</output>
                 
                         <label for="comments">Comments:<span class="required">*</span></label>
                         <textarea id="comments" name="comments" required minlength="10" maxlength="500" 
-                                  pattern="^[A-Za-z0-9 .,!?()&@#$%^*+=\\-_/]+$" 
                                   placeholder="Enter your message"></textarea>
-                        <output class="error-message">Please enter a valid comment (10-500 characters).</output>
                         <div id="comments-countdown"></div>
                 
                         <input type="hidden" name="possible_bot" value="true">
@@ -82,8 +78,8 @@
                 <div class="contact-icons">
                     <a href="https://linkedin.com/in/nora-zajzon-9bb6021b6" target="_blank" rel="noopener noreferrer">
                         <picture class="social-icon">
-                            <source type="image/webp" srcset="LinkedIn_icon.svg.webp">
-                            <img src="LinkedIn_icon.svg.webp" 
+                            <source type="image/webp" srcset="../images/LinkedIn_icon.svg.webp">
+                            <img src="../images/LinkedIn_icon.svg.webp" 
                                 alt="LinkedIn Profile" 
                                 loading="lazy"
                                 width="30"
@@ -92,8 +88,8 @@
                     </a>
                     <a href="https://github.com/nora-zajzon" target="_blank" rel="noopener noreferrer">
                         <picture class="social-icon">
-                            <source type="image/webp" srcset="GitHub-Mark-ea2971cee799.webp">
-                            <img src="GitHub-Mark-ea2971cee799.webp" 
+                            <source type="image/webp" srcset="../images/GitHub-Mark-ea2971cee799.webp">
+                            <img src="../images/GitHub-Mark-ea2971cee799.webp" 
                                 alt="GitHub Profile" 
                                 loading="lazy"
                                 width="30"
@@ -108,5 +104,6 @@
         <p>Made with &hearts; by Nora Zajzon</p>
     </footer>
     <script src="../javascript/theme.js"></script>
+    <script src="../javascript/contact.js"></script>
 </body>
 </html> 

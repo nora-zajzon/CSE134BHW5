@@ -45,14 +45,6 @@ form {
     margin-left: 4px;
   }
   
-  /* Error and info messages */
-  .error-message {
-    color: #d9534f;
-    font-size: 0.9em;
-    display: block;
-    min-height: 1.2em;
-  }
-  
   .info-message {
     color: #5bc0de;
     font-size: 0.9em;
@@ -250,7 +242,7 @@ input, textarea {
     border: 1px solid var(--secondary-color);
     border-radius: 4px;
     font-family: inherit;
-    transition: border 0.3s ease-in-out;
+    transition: border-color 0.3s ease;
 }
 
 /* Required fields show an orange border initially */
@@ -265,22 +257,7 @@ input:valid, textarea:valid {
 
 /* Invalid input styling */
 input:invalid, textarea:invalid {
-    border-left: 3px solid #f44336;
-}
-
-/* Show error messages only when input is invalid */
-input:invalid + .error-message,
-textarea:invalid + .error-message {
-    display: block;
-    color: red;
-    font-size: 0.9em;
-    margin-top: 5px;
-}
-
-/* Hide error messages when valid */
-input:valid + .error-message,
-textarea:valid + .error-message {
-    display: none;
+    border-left: 1px solid var(--secondary-color);
 }
 
 /* Styling for placeholders */
@@ -303,4 +280,22 @@ input::placeholder, textarea::placeholder {
     font-size: 0.9em;
     margin-top: 5px;
     color: inherit;
+}
+
+/* Input validation styling */
+input, textarea {
+    border: 1px solid var(--secondary-color);
+    transition: border-color 0.3s ease;
+}
+
+form.submitted input:invalid,
+form.submitted textarea:invalid {
+    border-color: #d9534f;
+    border-left-width: 3px;
+}
+
+form.submitted input:valid,
+form.submitted textarea:valid {
+    border-color: #4CAF50;
+    border-left-width: 3px;
 }
