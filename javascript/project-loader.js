@@ -15,7 +15,7 @@ class ProjectLoader {
 
     initializeLocalStorage() {
         if (!localStorage.getItem(this.STORAGE_KEY)) {
-            fetch('projects.json')
+            fetch('../projects.json')
                 .then(response => response.json())
                 .then(data => {
                     localStorage.setItem(this.STORAGE_KEY, JSON.stringify(data));

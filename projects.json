@@ -3,7 +3,7 @@
     {
       "title": "Software Engineer Intern - Influencer Marketing Web Application",
       "description": "As a Software Engineering Intern at StoryIt, I worked on developing an influencer marketing platform designed to streamline collaboration between businesses and content creators. This web application helps companies create, manage, and track marketing content deals efficiently.",
-      "image": "./story.webp",
+      "image": "story.webp",
       "imageAlt": "Story It Logo",
       "link": "https://www.storyit.app",
       "date": "2023",
@@ -13,7 +13,7 @@
     {
       "title": "Full Stack Developer - Hack For LA",
       "description": "I contribute to both front-end and back-end development to enhance this React and Node.js web application designed to streamline volunteer management. My work involves automating user onboarding for Hack For LA, building API endpoints, and refining the UI/UX to support remote team operations and improve the volunteer experience.",
-      "image": "./hack.webp",
+      "image": "hack.webp",
       "imageAlt": "Hack For LA Logo",
       "link": "https://www.hackforla.org/projects/vrms.html",
       "date": "2023",
@@ -23,7 +23,7 @@
     {
       "title": "I Miss My DJ - Interactive Music Experience",
       "description": "An interactive web application that recreates the experience of listening to curated music playlists based on user nostalgia and personal preferences, developed as part of Women in Computing at UCSD.",
-      "image": "./dj.webp",
+      "image": "dj.webp",
       "imageAlt": "Image of DJ",
       "link": "#",
       "date": "2023",
@@ -33,7 +33,7 @@
     {
       "title": "Brain-Computer Interface (BCI) Dino Game",
       "description": "Integrated brain-computer interface technology with the classic Google Chrome Dinosaur Game using the Muse Headband API for EEG signal processing. This project placed second in a district STEM competition.",
-      "image": "./dino.webp",
+      "image": "dino.webp",
       "imageAlt": "Screenshot of the BCI Dino Game",
       "link": "https://nora-zajzon.medium.com/playing-the-dino-game-using-brainwaves-927145035267",
       "date": "2022",

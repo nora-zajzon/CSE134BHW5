@@ -12,6 +12,10 @@ class ProjectCard extends HTMLElement {
         const title = this.getAttribute('title') || 'Project Title';
         const description = this.getAttribute('description') || 'Project description goes here';
         const imageUrl = this.getAttribute('image') || 'placeholder.jpg';
+        // Remove the leading slash and add the relative path
+        const correctedImageUrl = imageUrl.startsWith('/') ? 
+            `..${imageUrl}` : 
+            `../images/${imageUrl}`;
         const imageAlt = this.getAttribute('image-alt') || 'Project image';
         const link = this.getAttribute('link') || '#';
         const date = this.getAttribute('date') || '';
@@ -154,7 +158,7 @@ class ProjectCard extends HTMLElement {
             </style>
             <div class="card-container">
                 <picture>
-                    <img src="${imageUrl}" alt="${imageAlt}" loading="lazy">
+                    <img src="${correctedImageUrl}" alt="${imageAlt}" loading="lazy">
                 </picture>
                 <div class="content">
                     <h2>${title}</h2>
