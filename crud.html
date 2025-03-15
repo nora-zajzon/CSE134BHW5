@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management - Nora Zajzon</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/crud.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container">
+            <button class="hamburger-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h1 class="site-title">Nora Zajzon - UC San Diego Regents Scholar</h1>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <!-- Icon will be inserted by JavaScript -->
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="crud.html">Manage Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="crud-container">
+        <h1>Project Management</h1>
+        
+        <div class="storage-toggle">
+            <button id="localStorageBtn" class="active">Local Storage</button>
+            <button id="cloudStorageBtn">Cloud Storage</button>
+        </div>
+
+        <section class="project-form">
+            <h2>Add/Edit Project</h2>
+            <form id="projectForm">
+                <input type="hidden" id="projectId">
+                
+                <div class="form-group">
+                    <label for="title">Title:<span class="required">*</span></label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description:<span class="required">*</span></label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="image">Image Path:</label>
+                    <input type="text" id="image" name="image" placeholder="e.g., /images/project.webp">
+                </div>
+
+                <div class="form-group">
+                    <label for="imageAlt">Image Alt Text:</label>
+                    <input type="text" id="imageAlt" name="imageAlt">
+                </div>
+
+                <div class="form-group">
+                    <label for="link">Project Link:</label>
+                    <input type="url" id="link" name="link">
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="text" id="date" name="date" placeholder="e.g., 2024">
+                </div>
+
+                <div class="form-group">
+                    <label for="tags">Tags (comma-separated):</label>
+                    <input type="text" id="tags" name="tags" placeholder="e.g., React, Node.js, TypeScript">
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="showLink" name="showLink">
+                        Show Link on Project Card
+                    </label>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" id="saveBtn">Save Project</button>
+                    <button type="reset" id="clearBtn">Clear Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="project-list">
+            <h2>Existing Projects</h2>
+            <div id="projectsList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with &hearts; by Nora Zajzon</p>
+    </footer>
+    
+    <script src="javascript/theme.js"></script>
+    <script src="javascript/crud.js"></script>
+</body>
+</html> 

@@ -1,0 +1,127 @@
+.crud-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.storage-toggle {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.storage-toggle button {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.storage-toggle button.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.project-form {
+    background: var(--container-background);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-list {
+    background: var(--container-background);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.project-card {
+    background: var(--background-color);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.project-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--secondary-color);
+}
+
+.project-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.project-actions button {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.edit-btn {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.required {
+    color: #dc3545;
+    margin-left: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .crud-container {
+        margin: 1rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .project-actions {
+        flex-direction: column;
+    }
+} 
